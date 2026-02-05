@@ -65,14 +65,14 @@ noBtn.addEventListener("click", () => {
   // Evet butonunu her basmada büyüt
   const evetWidth = yesBtn.offsetWidth;
   const evetHeight = yesBtn.offsetHeight;
-  yesBtn.style.width = evetWidth * 1.04 + "px";  // %26 büyüt
+  yesBtn.style.width = evetWidth * 1.04 + "px";  // 
   yesBtn.style.height = evetHeight * 1.04 + "px";
 
   // 10 kere basınca Hayır butonunu gizle
   if (hayirSayac >= 10) {
     noBtn.style.display = "none";
   }
-})04
+})
 
 // Fotoğrafları gösterme fonksiyonu
 function showPhotos() {
