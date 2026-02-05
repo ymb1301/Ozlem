@@ -65,8 +65,8 @@ noBtn.addEventListener("click", () => {
   // Evet butonunu her basmada büyüt
   const evetWidth = yesBtn.offsetWidth;
   const evetHeight = yesBtn.offsetHeight;
-  yesBtn.style.width = evetWidth * 1.5 + "px";  // %26 büyüt
-  yesBtn.style.height = evetHeight * 1.5 + "px";
+  yesBtn.style.width = evetWidth * 1.4 + "px";  // %26 büyüt
+  yesBtn.style.height = evetHeight * 1.4 + "px";
 
   // 10 kere basınca Hayır butonunu gizle
   if (hayirSayac >= 10) {
