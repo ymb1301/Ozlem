@@ -16,7 +16,7 @@ body {
 }
 
 .pixel-cat {
-  width: 300px;
+  width: 200px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -65,16 +65,16 @@ h1 {
 
 /* Butonlar */
 .buttons button {
-  padding: 22.5px 45px;
-  font-size: 27px;
+  padding: 15px 30px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 12px;
   /* köşeleri yuvarlatılmış dikdörtgen */
-  min-width: 90px;
+  min-width: 60px;
   /* çok küçülmemesi için */
-  min-height: 45px;
+  min-height: 30px;
   /* çok küçülmemesi için */
 }
 
@@ -108,8 +108,8 @@ h1 {
 }
 
 .photo-item {
-  max-width: 350px;
-  max-height: 400px;
+  max-width: 233px;
+  max-height: 267px;
   width: auto;
   height: auto;
   border-radius: 12px;

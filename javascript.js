@@ -11,6 +11,7 @@ const hayirMesajlari = [
   "Seni kırdığım için çok özür dilerim",
   "Hala hayırmı diyorusun sevgimizden güç al yapabiliriz",
   "Artık ciddileşiyorum evlenirim senle görürsün",
+  "Yaşıdığını hissetiren beni unuttun mu",
   "E hatırla artık o seni çok etkileyen gülüşümü",
 
 ];
@@ -45,7 +46,9 @@ noBtn.addEventListener("click", () => {
   // Eğer mesaj dizisinde mesaj varsa göster, yoksa fotoğrafları göster
   if (hayirSayac < hayirMesajlari.length) {
     const mesaj = hayirMesajlari[hayirSayac];
-    showNotification(mesaj, 3000);
+    // Son mesaj için daha kısa süre
+    const duration = (hayirSayac === hayirMesajlari.length - 1) ? 500 : 3000;
+    showNotification(mesaj, duration);
   } else {
     // Son tıklamada fotoğrafları göster
     showPhotos();
@@ -62,8 +65,8 @@ noBtn.addEventListener("click", () => {
   // Evet butonunu her basmada büyüt
   const evetWidth = yesBtn.offsetWidth;
   const evetHeight = yesBtn.offsetHeight;
-  yesBtn.style.width = evetWidth * 1.20 + "px";  // %26 büyüt
-  yesBtn.style.height = evetHeight * 1.20 + "px";
+  yesBtn.style.width = evetWidth * 1.10 + "px";  // %26 büyüt
+  yesBtn.style.height = evetHeight * 1.10 + "px";
 
   // 10 kere basınca Hayır butonunu gizle
   if (hayirSayac >= 10) {
